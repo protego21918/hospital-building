@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+  Adversary Wars simulation project, set in the fictional city of Adversary City.
+  City Hospital is a fictional facility in the fictional city of Adversary City.
+  This site was built for a simulated training/CTF scenario and is not intended
+  to represent, impersonate, or harm any real hospital, organization, or place.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found · City Hospital</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="disclaimer" content="City Hospital and Adversary City are fictional, built for the Adversary Wars simulated training scenario. Not affiliated with, and does not depict, any real hospital or organization." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%231D6F72'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23FBFAF7' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#1d6f72" />
+          <path d="M20 11v18M11 20h18" stroke="#fbfaf7" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">City Hospital</span>
+          <span class="brand-sub">Adversary City · Est. 1958</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" id="nav-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="departments/index.html">Departments</a></li>
+          <li><a href="doctors/index.html">Doctors</a></li>
+          <li><a href="visiting/index.html">Visiting</a></li>
+          <li><a href="notices/index.html">Notices</a></li>
+        </ul>
+        <a class="btn btn-primary" href="index.html#appointment">Request Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-page">
+      <div class="wrap">
+        <span class="error-code">404 · Not Found</span>
+        <h1>This page isn't part of City Hospital's site.</h1>
+        <p class="lede">The page you're looking for may have moved, or the address may be incorrect. Use the links below to find what you need.</p>
+        <div class="error-links">
+          <a class="btn btn-primary" href="index.html">Return Home</a>
+          <a class="btn btn-secondary" href="index.html#location">Emergency Information</a>
+          <a class="btn btn-secondary" href="departments/index.html">Departments</a>
+          <a class="btn btn-secondary" href="index.html#location">Contact</a>
+        </div>
+        <div class="emergency-callout">
+          <strong>Having a medical emergency?</strong> Call your local emergency number or go directly to the Emergency entrance at 4400 Meridian Parkway.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-bottom">
+        <p class="disclaimer">City Hospital and Adversary City are fictional. This site is part of the Adversary Wars simulated training scenario and is not affiliated with, and does not depict, any real hospital or organization.</p>
+        <p>&copy; <span id="year"></span> City Hospital, Adversary City (fictional).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

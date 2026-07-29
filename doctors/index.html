@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+  Adversary Wars simulation project, set in the fictional city of Adversary City.
+  City Hospital is a fictional facility in the fictional city of Adversary City.
+  This site was built for a simulated training/CTF scenario and is not intended
+  to represent, impersonate, or harm any real hospital, organization, or place.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctors · City Hospital</title>
+  <meta name="description" content="Meet the eight department chiefs at City Hospital, with credentials, experience, and the department each one leads." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="disclaimer" content="City Hospital and Adversary City are fictional, built for the Adversary Wars simulated training scenario. Not affiliated with, and does not depict, any real hospital or organization." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%231D6F72'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23FBFAF7' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">
+        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#1d6f72" />
+          <path d="M20 11v18M11 20h18" stroke="#fbfaf7" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">City Hospital</span>
+          <span class="brand-sub">Adversary City · Est. 1958</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" id="nav-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../departments/index.html">Departments</a></li>
+          <li><a href="../doctors/index.html" aria-current="page">Doctors</a></li>
+          <li><a href="../visiting/index.html">Visiting</a></li>
+          <li><a href="../notices/index.html">Notices</a></li>
+        </ul>
+        <a class="btn btn-primary" href="../index.html#appointment">Request Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <div class="wrap">
+        <a class="back-link" href="../index.html">&larr; Back to City Hospital</a>
+        <span class="eyebrow">Our Doctors</span>
+        <h1>Meet the physicians leading City Hospital.</h1>
+        <p class="lede">Eight department chiefs, each with years of experience and a specific focus. Find the right specialist, or read about the department they lead.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="detail-grid">
+          <article class="doctor-card reveal" id="monica-geller">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar1"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#1d6f72" />
+              <g clip-path="url(#davatar1)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#12293b" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">MG</text>
+            </svg>
+            <h3>Dr. Monica Geller</h3>
+            <span class="doctor-role">Chief of Emergency Medicine</span>
+            <span class="doctor-credentials">MD, Board Certified in Emergency Medicine &middot; 18 years at City Hospital</span>
+            <p>Treats trauma and acute care patients and leads the hospital's mass-casualty response planning, including chest pain and stroke protocols.</p>
+            <a class="dept-link" href="../departments/index.html#emergency-trauma">Emergency &amp; Trauma</a>
+          </article>
+
+          <article class="doctor-card reveal" id="sheldon-cooper">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar2"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#c14a1a" />
+              <g clip-path="url(#davatar2)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#12293b" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">SC</text>
+            </svg>
+            <h3>Dr. Sheldon Cooper</h3>
+            <span class="doctor-role">Cardiology</span>
+            <span class="doctor-credentials">MD, PhD, Board Certified in Cardiology &middot; 12 years at City Hospital</span>
+            <p>Specializes in interventional procedures and heart failure management, and leads the cardiac catheterization lab.</p>
+            <a class="dept-link" href="../departments/index.html#cardiology">Cardiology</a>
+          </article>
+
+          <article class="doctor-card reveal" id="amy-fowler">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar3"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#4f7a5e" />
+              <g clip-path="url(#davatar3)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#12293b" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">AF</text>
+            </svg>
+            <h3>Dr. Amy Fowler</h3>
+            <span class="doctor-role">Pediatrics</span>
+            <span class="doctor-credentials">MD, Board Certified in Pediatrics &middot; 9 years at City Hospital</span>
+            <p>Leads the hospital's neonatal intensive care unit, with a focus on newborn development and early intervention for premature infants.</p>
+            <a class="dept-link" href="../departments/index.html#pediatrics">Pediatrics</a>
+          </article>
+
+          <article class="doctor-card reveal" id="howard-wolowitz">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar4"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#12293b" />
+              <g clip-path="url(#davatar4)" fill="#eaf2f1" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#c14a1a" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">HW</text>
+            </svg>
+            <h3>Dr. Howard Wolowitz</h3>
+            <span class="doctor-role">Orthopedics &amp; Sports Medicine</span>
+            <span class="doctor-credentials">MD, Board Certified in Orthopedic Surgery &middot; 14 years at City Hospital</span>
+            <p>Focuses on joint reconstruction and sports injury recovery, working closely with the physical therapy team on post-surgical rehabilitation.</p>
+            <a class="dept-link" href="../departments/index.html#orthopedics-sports-medicine">Orthopedics &amp; Sports Medicine</a>
+          </article>
+
+          <article class="doctor-card reveal" id="rachel-green">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar5"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#154f51" />
+              <g clip-path="url(#davatar5)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#12293b" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">RG</text>
+            </svg>
+            <h3>Dr. Rachel Green</h3>
+            <span class="doctor-role">Maternity &amp; Newborn</span>
+            <span class="doctor-credentials">MD, Board Certified in Obstetrics &amp; Gynecology &middot; 10 years at City Hospital</span>
+            <p>Oversees labor and delivery services and the hospital's lactation consulting program, with training in high-risk obstetrics.</p>
+            <a class="dept-link" href="../departments/index.html#maternity-newborn">Maternity &amp; Newborn</a>
+          </article>
+
+          <article class="doctor-card reveal" id="leonard-hofstadter">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar6"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#9c3712" />
+              <g clip-path="url(#davatar6)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#12293b" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">LH</text>
+            </svg>
+            <h3>Dr. Leonard Hofstadter</h3>
+            <span class="doctor-role">Oncology</span>
+            <span class="doctor-credentials">MD, Board Certified in Medical Oncology &middot; 11 years at City Hospital</span>
+            <p>Coordinates cancer treatment plans from diagnosis through survivorship, with a focus on infusion therapy and long-term follow-up care.</p>
+            <a class="dept-link" href="../departments/index.html#oncology">Oncology</a>
+          </article>
+
+          <article class="doctor-card reveal" id="raj-koothrappali">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar7"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#3c5266" />
+              <g clip-path="url(#davatar7)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#c14a1a" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">RK</text>
+            </svg>
+            <h3>Dr. Raj Koothrappali</h3>
+            <span class="doctor-role">Radiology &amp; Imaging</span>
+            <span class="doctor-credentials">MD, Board Certified in Diagnostic Radiology &middot; 8 years at City Hospital</span>
+            <p>Reads emergency and inpatient imaging studies with same-day turnaround on most scans, and performs interventional radiology procedures.</p>
+            <a class="dept-link" href="../departments/index.html#radiology-imaging">Radiology &amp; Imaging</a>
+          </article>
+
+          <article class="doctor-card reveal" id="bernadette-rostenkowski">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar8"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#eaf2f1" />
+              <g clip-path="url(#davatar8)" fill="#12293b" fill-opacity="0.9">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#1d6f72" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">BR</text>
+            </svg>
+            <h3>Dr. Bernadette Rostenkowski</h3>
+            <span class="doctor-role">Laboratory &amp; Pathology</span>
+            <span class="doctor-credentials">MD, PhD, Board Certified in Pathology &middot; 13 years at City Hospital</span>
+            <p>Runs the hospital's pathology lab and blood bank, with a focus on rapid turnaround for critical diagnostic results.</p>
+            <a class="dept-link" href="../departments/index.html#laboratory-pathology">Laboratory &amp; Pathology</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-name brand-name-invert">City Hospital</span>
+          <p>Adversary City's public general hospital and Level II trauma center, serving the city since 1958.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="../about/index.html">About City Hospital</a></li>
+            <li><a href="../departments/index.html">Departments</a></li>
+            <li><a href="../doctors/index.html">Doctors</a></li>
+            <li><a href="../status/index.html">Hospital Status</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Patients</h3>
+          <ul>
+            <li><a href="../visiting/index.html">Visiting &amp; Patient Info</a></li>
+            <li><a href="../notices/index.html">Notices</a></li>
+            <li><a href="../index.html#appointment">Request Appointment</a></li>
+            <li><a href="../index.html#location">Directions &amp; Parking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>4400 Meridian Parkway</li>
+            <li>Adversary City, AC 00000</li>
+            <li>555-0142</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disclaimer">City Hospital and Adversary City are fictional. This site is part of the Adversary Wars simulated training scenario and is not affiliated with, and does not depict, any real hospital or organization.</p>
+        <p>&copy; <span id="year"></span> City Hospital, Adversary City (fictional).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

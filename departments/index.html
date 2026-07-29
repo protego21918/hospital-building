@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--
+  Adversary Wars simulation project, set in the fictional city of Adversary City.
+  City Hospital is a fictional facility in the fictional city of Adversary City.
+  This site was built for a simulated training/CTF scenario and is not intended
+  to represent, impersonate, or harm any real hospital, organization, or place.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Departments · City Hospital</title>
+  <meta name="description" content="All eight departments at City Hospital, with services, hours, and the physician leading each one." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="disclaimer" content="City Hospital and Adversary City are fictional, built for the Adversary Wars simulated training scenario. Not affiliated with, and does not depict, any real hospital or organization." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%231D6F72'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23FBFAF7' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">
+        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#1d6f72" />
+          <path d="M20 11v18M11 20h18" stroke="#fbfaf7" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">City Hospital</span>
+          <span class="brand-sub">Adversary City · Est. 1958</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" id="nav-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../departments/index.html" aria-current="page">Departments</a></li>
+          <li><a href="../doctors/index.html">Doctors</a></li>
+          <li><a href="../visiting/index.html">Visiting</a></li>
+          <li><a href="../notices/index.html">Notices</a></li>
+        </ul>
+        <a class="btn btn-primary" href="../index.html#appointment">Request Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <div class="wrap">
+        <a class="back-link" href="../index.html">&larr; Back to City Hospital</a>
+        <span class="eyebrow">Departments</span>
+        <h1>Every department at City Hospital.</h1>
+        <p class="lede">Eight departments cover emergency care, specialist treatment, and diagnostics under one roof. Each one below lists its key services, hours, and the physician leading it.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="detail-grid">
+          <article class="dept-card dept-detail reveal" id="emergency-trauma">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.7-10-9.3C.5 8.1 2.3 4.5 6 4a5 5 0 0 1 6 3 5 5 0 0 1 6-3c3.7.5 5.5 4.1 4 7.7C19.5 16.3 12 21 12 21z"/></svg>
+            <h3>Emergency &amp; Trauma</h3>
+            <p>City Hospital's Level II Trauma Center treats acute injury, chest pain, stroke, and critical illness around the clock. Ambulances arriving from anywhere in Adversary City are routed here first.</p>
+            <ul>
+              <li>Trauma resuscitation</li>
+              <li>Chest pain protocol</li>
+              <li>Stroke response team</li>
+              <li>Poison control consultation</li>
+            </ul>
+            <span class="dept-meta">Open 24 hours</span>
+            <a class="chief-link" href="../doctors/index.html#monica-geller">Chief: Dr. Monica Geller</a>
+          </article>
+
+          <article class="dept-card dept-detail reveal" id="cardiology">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2 5 4-10 2 5h6"/></svg>
+            <h3>Cardiology</h3>
+            <p>Diagnosis and treatment of heart conditions, from routine screening to interventional procedures. The catheterization lab runs alongside a dedicated cardiac recovery ward.</p>
+            <ul>
+              <li>Echocardiography</li>
+              <li>Cardiac catheterization</li>
+              <li>Heart failure management</li>
+              <li>Cardiac rehabilitation</li>
+            </ul>
+            <span class="dept-meta">Mon&ndash;Fri, 8:00 AM &ndash; 6:00 PM. Emergency cardiac care available 24 hours through the ER.</span>
+            <a class="chief-link" href="../doctors/index.html#sheldon-cooper">Chief: Dr. Sheldon Cooper</a>
+          </article>
+
+          <article class="dept-card dept-detail reveal" id="maternity-newborn">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="7" r="3.2"/><path d="M6 21c0-4 2.7-6.5 6-6.5s6 2.5 6 6.5"/></svg>
+            <h3>Maternity &amp; Newborn</h3>
+            <p>Labor, delivery, and newborn care in a wing built around families, with a neonatal intensive care unit for babies who need extra support.</p>
+            <ul>
+              <li>Labor &amp; delivery suites</li>
+              <li>Neonatal intensive care</li>
+              <li>Lactation consulting</li>
+              <li>Prenatal classes</li>
+            </ul>
+            <span class="dept-meta">Open 24 hours for deliveries. Tours by appointment, Mon&ndash;Sat.</span>
+            <a class="chief-link" href="../doctors/index.html#rachel-green">Chief: Dr. Rachel Green</a>
+          </article>
+
+          <article class="dept-card dept-detail reveal" id="pediatrics">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="6" r="2.5"/><path d="M12 8.5v6M8.5 12H12M12 14.5l-3 6M12 14.5l3 6"/></svg>
+            <h3>Pediatrics</h3>
+            <p>Primary and specialist care for infants, children, and adolescents, with exam rooms and imaging designed to feel less clinical for younger patients.</p>
+            <ul>
+              <li>Well-child visits</li>
+              <li>Pediatric imaging</li>
+              <li>Vaccination clinic</li>
+              <li>Adolescent medicine</li>
+            </ul>
+            <span class="dept-meta">Mon&ndash;Sat, 8:00 AM &ndash; 8:00 PM</span>
+            <a class="chief-link" href="../doctors/index.html#amy-fowler">Chief: Dr. Amy Fowler</a>
+          </article>
+
+          <article class="dept-card dept-detail reveal" id="oncology">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M4 12H2M22 12h-2M6 6 4.6 4.6M17.4 4.6 19 6M6 18l-1.4 1.4M17.4 19.4 19 18"/><circle cx="12" cy="12" r="5"/></svg>
+            <h3>Oncology</h3>
+            <p>Cancer screening, treatment planning, and ongoing infusion services, coordinated by a team that stays with patients from diagnosis through recovery.</p>
+            <ul>
+              <li>Chemotherapy infusion</li>
+              <li>Radiation oncology referral</li>
+              <li>Cancer screening</li>
+              <li>Survivorship planning</li>
+            </ul>
+            <span class="dept-meta">Mon&ndash;Fri, 7:00 AM &ndash; 5:00 PM</span>
+            <a class="chief-link" href="../doctors/index.html#leonard-hofstadter">Chief: Dr. Leonard Hofstadter</a>
+          </article>
+
+          <article class="dept-card dept-detail reveal" id="orthopedics-sports-medicine">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6a2 2 0 1 1 3 1.7L16 15l1.3-1.3a2 2 0 1 1 1.7 3 2 2 0 1 1-3-1.7L9 8l-1.3 1.3A2 2 0 1 1 6 6z"/></svg>
+            <h3>Orthopedics &amp; Sports Medicine</h3>
+            <p>Joint reconstruction, fracture care, and rehabilitation for sports injuries, backed by an on-site physical therapy gym.</p>
+            <ul>
+              <li>Joint replacement</li>
+              <li>Fracture clinic</li>
+              <li>Sports injury rehabilitation</li>
+              <li>Physical therapy</li>
+            </ul>
+            <span class="dept-meta">Mon&ndash;Fri, 8:00 AM &ndash; 6:00 PM</span>
+            <a class="chief-link" href="../doctors/index.html#howard-wolowitz">Chief: Dr. Howard Wolowitz</a>
+          </article>
+
+          <article class="dept-card dept-detail reveal" id="radiology-imaging">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg>
+            <h3>Radiology &amp; Imaging</h3>
+            <p>X-ray, CT, MRI, and ultrasound imaging read by on-site radiologists, with same-day results for most emergency and inpatient studies.</p>
+            <ul>
+              <li>MRI &amp; CT scanning</li>
+              <li>Ultrasound</li>
+              <li>Mammography</li>
+              <li>Interventional radiology</li>
+            </ul>
+            <span class="dept-meta">Open 24 hours for emergency imaging. Scheduled studies, Mon&ndash;Sat.</span>
+            <a class="chief-link" href="../doctors/index.html#raj-koothrappali">Chief: Dr. Raj Koothrappali</a>
+          </article>
+
+          <article class="dept-card dept-detail reveal" id="laboratory-pathology">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2h6M10 2v6.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 8.5V2"/></svg>
+            <h3>Laboratory &amp; Pathology</h3>
+            <p>Bloodwork, diagnostic testing, and pathology services for every department, processed in a lab built for rapid turnaround on critical results.</p>
+            <ul>
+              <li>Bloodwork &amp; diagnostics</li>
+              <li>Pathology review</li>
+              <li>Blood bank</li>
+              <li>Rapid critical-result testing</li>
+            </ul>
+            <span class="dept-meta">Open 24 hours</span>
+            <a class="chief-link" href="../doctors/index.html#bernadette-rostenkowski">Chief: Dr. Bernadette Rostenkowski</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-name brand-name-invert">City Hospital</span>
+          <p>Adversary City's public general hospital and Level II trauma center, serving the city since 1958.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="../about/index.html">About City Hospital</a></li>
+            <li><a href="../departments/index.html">Departments</a></li>
+            <li><a href="../doctors/index.html">Doctors</a></li>
+            <li><a href="../status/index.html">Hospital Status</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Patients</h3>
+          <ul>
+            <li><a href="../visiting/index.html">Visiting &amp; Patient Info</a></li>
+            <li><a href="../notices/index.html">Notices</a></li>
+            <li><a href="../index.html#appointment">Request Appointment</a></li>
+            <li><a href="../index.html#location">Directions &amp; Parking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>4400 Meridian Parkway</li>
+            <li>Adversary City, AC 00000</li>
+            <li>555-0142</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disclaimer">City Hospital and Adversary City are fictional. This site is part of the Adversary Wars simulated training scenario and is not affiliated with, and does not depict, any real hospital or organization.</p>
+        <p>&copy; <span id="year"></span> City Hospital, Adversary City (fictional).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

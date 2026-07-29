@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!--
+  Adversary Wars simulation project, set in the fictional city of Adversary City.
+  City Hospital is a fictional facility in the fictional city of Adversary City.
+  This site was built for a simulated training/CTF scenario and is not intended
+  to represent, impersonate, or harm any real hospital, organization, or place.
+  No real patient data, phone numbers, or addresses are used anywhere in this project.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City Hospital · Adversary City</title>
+  <meta name="description" content="City Hospital is Adversary City's public general hospital and Level II trauma center, providing 24-hour emergency care, inpatient services, and specialist departments." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="disclaimer" content="City Hospital is a fictional facility in the fictional city of Adversary City.
+  This site was built for a simulated training/CTF scenario and is not intended
+  to represent, impersonate, or harm any real hospital, organization, or place.
+  No real patient data, phone numbers, or addresses are used anywhere in this project." />
+  <meta property="og:title" content="City Hospital · Adversary City" />
+  <meta property="og:description" content="Adversary City's public general hospital and Level II trauma center." />
+  <meta property="og:type" content="website" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%231D6F72'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23FBFAF7' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-current="page">
+        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#1d6f72" />
+          <path d="M20 11v18M11 20h18" stroke="#fbfaf7" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">City Hospital</span>
+          <span class="brand-sub">Adversary City · Est. 1958</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" id="nav-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="departments/index.html">Departments</a></li>
+          <li><a href="doctors/index.html">Doctors</a></li>
+          <li><a href="visiting/index.html">Visiting</a></li>
+          <li><a href="notices/index.html">Notices</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#appointment">Request Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <img class="hero-photo" src="assets/images/hospital-entrance.jpg" width="910" height="637" alt="City Hospital's main entrance, with an illuminated Emergency canopy over the drop-off drive." fetchpriority="high" />
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <span class="eyebrow eyebrow-on-photo">Level II Trauma Center</span>
+        <h1 class="on-photo">Emergency and specialist care for everyone in Adversary City.</h1>
+        <p class="lede on-photo">City Hospital has treated the city since 1958. Our trauma center runs around the clock, backed by 340 beds and specialists across eight departments.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#location">Find Emergency Care</a>
+          <a class="btn btn-secondary btn-on-photo" href="#appointment">Request an Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-board" aria-labelledby="status-heading">
+      <div class="wrap">
+        <div class="status-head">
+          <h2 id="status-heading">Hospital Status</h2>
+          <span class="status-badge"><span class="status-dot" aria-hidden="true"></span>Demonstration data</span>
+        </div>
+      </div>
+      <div class="wrap wrap-flush">
+        <div class="status-grid">
+          <div class="status-cell">
+            <span class="status-label">ER Wait Time</span>
+            <span class="status-value">38 min</span>
+          </div>
+          <div class="status-cell">
+            <span class="status-label">Beds Available</span>
+            <span class="status-value">22 / 340</span>
+          </div>
+          <div class="status-cell">
+            <span class="status-label">Ambulance Bay</span>
+            <span class="status-value">Open</span>
+          </div>
+          <div class="status-cell">
+            <span class="status-label">Blood Bank</span>
+            <span class="status-value">O− Low</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <p class="status-caption">Figures are illustrative and shown for demonstration purposes only. Call ahead for current wait times.</p>
+        <a class="view-more on-dark" href="status/index.html">View full hospital status →</a>
+      </div>
+    </section>
+
+    <section class="section" id="departments">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Departments</span>
+          <h2>Eight departments, one hospital.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="dept-card reveal">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7.5-4.7-10-9.3C.5 8.1 2.3 4.5 6 4a5 5 0 0 1 6 3 5 5 0 0 1 6-3c3.7.5 5.5 4.1 4 7.7C19.5 16.3 12 21 12 21z"/></svg>
+            <h3>Emergency &amp; Trauma</h3>
+            <p>Open 24 hours a day for acute injury, chest pain, stroke, and critical care.</p>
+          </article>
+          <article class="dept-card reveal">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2 5 4-10 2 5h6"/></svg>
+            <h3>Cardiology</h3>
+            <p>Diagnosis and treatment of heart conditions, including interventional procedures.</p>
+          </article>
+          <article class="dept-card reveal">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="7" r="3.2"/><path d="M6 21c0-4 2.7-6.5 6-6.5s6 2.5 6 6.5"/></svg>
+            <h3>Maternity &amp; Newborn</h3>
+            <p>Labor, delivery, and newborn care, with a dedicated neonatal intensive care unit.</p>
+          </article>
+          <article class="dept-card reveal">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="6" r="2.5"/><path d="M12 8.5v6M8.5 12H12M12 14.5l-3 6M12 14.5l3 6"/></svg>
+            <h3>Pediatrics</h3>
+            <p>Primary and specialist care for infants, children, and adolescents.</p>
+          </article>
+          <article class="dept-card reveal">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M4 12H2M22 12h-2M6 6 4.6 4.6M17.4 4.6 19 6M6 18l-1.4 1.4M17.4 19.4 19 18"/><circle cx="12" cy="12" r="5"/></svg>
+            <h3>Oncology</h3>
+            <p>Cancer screening, treatment planning, and ongoing infusion services.</p>
+          </article>
+          <article class="dept-card reveal">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6a2 2 0 1 1 3 1.7L16 15l1.3-1.3a2 2 0 1 1 1.7 3 2 2 0 1 1-3-1.7L9 8l-1.3 1.3A2 2 0 1 1 6 6z"/></svg>
+            <h3>Orthopedics &amp; Sports Medicine</h3>
+            <p>Joint reconstruction, fracture care, and rehabilitation for sports injuries.</p>
+          </article>
+          <article class="dept-card reveal">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg>
+            <h3>Radiology &amp; Imaging</h3>
+            <p>X-ray, CT, MRI, and ultrasound imaging read by on-site radiologists.</p>
+          </article>
+          <article class="dept-card reveal">
+            <svg class="dept-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2h6M10 2v6.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 8.5V2"/></svg>
+            <h3>Laboratory &amp; Pathology</h3>
+            <p>Bloodwork, diagnostic testing, and pathology services for every department.</p>
+          </article>
+        </div>
+        <a class="view-more" href="departments/index.html">View full departments list →</a>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">At City Hospital</span>
+          <h2>Care you can see.</h2>
+        </div>
+        <div class="photo-duo">
+          <figure class="photo-card reveal">
+            <img src="assets/images/emergency-room-hospital-ambulance-rescue.jpg" width="910" height="607" loading="lazy" alt="Ambulances parked under the covered bay outside City Hospital's Emergency entrance." />
+            <figcaption>The ambulance bay, staffed and ready around the clock.</figcaption>
+          </figure>
+          <figure class="photo-card reveal">
+            <img src="assets/images/hospital-interior.jpg" width="1240" height="700" loading="lazy" alt="A pediatric imaging room at City Hospital, decorated with an underwater mural beside the scanner." />
+            <figcaption>The pediatric wing's imaging suite, designed to feel less clinical.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="stat-band">
+      <div class="wrap">
+        <div class="stat-band-head reveal">
+          <span class="eyebrow">About City Hospital</span>
+          <h2>Serving Adversary City since 1958.</h2>
+          <p>A public trauma center built for the whole city, not just the neighborhoods that can reach it easily.</p>
+        </div>
+        <div class="stat-grid-row">
+          <div class="stat-item">
+            <span class="stat-num">1958</span>
+            <span class="stat-label">Founded</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">340</span>
+            <span class="stat-label">Beds</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">Level II</span>
+            <span class="stat-label">Trauma Center</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">1,200+</span>
+            <span class="stat-label">Staff</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">24/7</span>
+            <span class="stat-label">Emergency Care</span>
+          </div>
+        </div>
+        <a class="view-more on-dark" href="about/index.html">View our full history →</a>
+      </div>
+    </section>
+
+    <section class="section" id="doctors">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Doctors</span>
+          <h2>Specialists leading each department.</h2>
+        </div>
+        <div class="doctor-grid">
+          <article class="doctor-card reveal">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar1"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#1d6f72" />
+              <g clip-path="url(#davatar1)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#12293b" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">MG</text>
+            </svg>
+            <h3>Dr. Monica Geller</h3>
+            <span class="doctor-role">Chief of Emergency Medicine</span>
+            <p>Eighteen years treating trauma and acute care patients at City Hospital.</p>
+          </article>
+          <article class="doctor-card reveal">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar2"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#c14a1a" />
+              <g clip-path="url(#davatar2)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#12293b" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">SC</text>
+            </svg>
+            <h3>Dr. Sheldon Cooper</h3>
+            <span class="doctor-role">Cardiology</span>
+            <p>Specializes in interventional procedures and heart failure management.</p>
+          </article>
+          <article class="doctor-card reveal">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar3"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#4f7a5e" />
+              <g clip-path="url(#davatar3)" fill="#fbfaf7" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#12293b" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">AF</text>
+            </svg>
+            <h3>Dr. Amy Fowler</h3>
+            <span class="doctor-role">Pediatrics</span>
+            <p>Leads the hospital's neonatal intensive care unit.</p>
+          </article>
+          <article class="doctor-card reveal">
+            <svg class="doctor-avatar" viewBox="0 0 80 80" aria-hidden="true">
+              <clipPath id="davatar4"><circle cx="40" cy="40" r="40" /></clipPath>
+              <circle cx="40" cy="40" r="40" fill="#12293b" />
+              <g clip-path="url(#davatar4)" fill="#eaf2f1" fill-opacity="0.92">
+                <circle cx="40" cy="30" r="12" />
+                <path d="M14 68C14 52 26 42 40 42C54 42 66 52 66 68L66 80L14 80Z" />
+              </g>
+              <circle cx="62" cy="62" r="14" fill="#c14a1a" stroke="#fbfaf7" stroke-width="2" />
+              <text x="62" y="66" text-anchor="middle" font-family="monospace" font-size="11" fill="#fbfaf7">HW</text>
+            </svg>
+            <h3>Dr. Howard Wolowitz</h3>
+            <span class="doctor-role">Orthopedics &amp; Sports Medicine</span>
+            <p>Focuses on joint reconstruction and sports injury recovery.</p>
+          </article>
+        </div>
+        <a class="view-more" href="doctors/index.html">View full doctor directory →</a>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="visiting">
+      <div class="wrap">
+        <div class="two-col">
+          <div class="reveal">
+            <span class="eyebrow">Visiting Hours</span>
+            <h2>When you can visit.</h2>
+            <table class="hours-table">
+              <tr><th scope="row">General Wards</th><td>11:00 AM – 8:00 PM</td></tr>
+              <tr><th scope="row">Maternity Ward</th><td>10:00 AM – 6:00 PM · partners may stay overnight</td></tr>
+              <tr><th scope="row">Intensive Care Unit</th><td>1:00–3:00 PM and 6:00–8:00 PM · two visitors at a time</td></tr>
+              <tr><th scope="row">Emergency Department</th><td>Open 24 hours · access depends on treatment area</td></tr>
+              <tr><th scope="row">Pediatrics</th><td>10:00 AM – 8:00 PM · one guardian may stay overnight</td></tr>
+            </table>
+          </div>
+          <div class="reveal">
+            <span class="eyebrow">Patient Information</span>
+            <h2>Getting ready for your visit.</h2>
+            <ul class="info-list">
+              <li>
+                <h3>Insurance &amp; Billing</h3>
+                <p>Bring your insurance card and a photo ID to registration. Billing staff are available on the ground floor.</p>
+              </li>
+              <li>
+                <h3>Patient Portal</h3>
+                <p>MyCityHospital lets patients view test results and message their care team online.</p>
+              </li>
+              <li>
+                <h3>Parking &amp; Directions</h3>
+                <p>Visitor parking is on Meridian Parkway. Follow signs from the main entrance to the parking structure.</p>
+              </li>
+              <li>
+                <h3>Interpreter Services</h3>
+                <p>Interpreters are available on request at registration for any department.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="view-more" href="visiting/index.html">View full visiting &amp; patient information →</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Notices</span>
+          <h2>Current advisories.</h2>
+        </div>
+        <ul class="notice-list reveal">
+          <li class="notice-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8v5M12 16.5h.01"/><circle cx="12" cy="12" r="9"/></svg>
+            <p>Flu vaccination clinic open in the East Wing lobby through October.</p>
+          </li>
+          <li class="notice-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8v5M12 16.5h.01"/><circle cx="12" cy="12" r="9"/></svg>
+            <p>Blood donation drive at the Meridian Parkway entrance, first Saturday of every month.</p>
+          </li>
+          <li class="notice-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 8v5M12 16.5h.01"/><circle cx="12" cy="12" r="9"/></svg>
+            <p>Visitor screening is in place at all entrances during peak respiratory season.</p>
+          </li>
+        </ul>
+        <a class="view-more" href="notices/index.html">View all notices →</a>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="location">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Visit City Hospital</span>
+          <h2>Location, contact, and appointments.</h2>
+          <p>Find us on Meridian Parkway, or start a visit request below.</p>
+        </div>
+
+        <ol class="steps reveal">
+          <li>
+            <span class="step-num">01</span>
+            Tell us what you need. Choose a department and the reason for your visit.
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            We check availability. Our scheduling team matches you with the right specialist.
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            We confirm your visit. You receive a confirmed date, time, and location.
+          </li>
+        </ol>
+
+        <div class="two-col location-grid">
+          <div class="location-block reveal panel-card">
+            <h3>Location &amp; Contact</h3>
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z" /><circle cx="12" cy="11" r="2.2" /></svg>
+                <address>
+                  City Hospital<br />
+                  4400 Meridian Parkway<br />
+                  Adversary City, AC 00000
+                </address>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l1-4-5-2-2 2c-2-1-4-3-5-5l2-2-2-5-4 1z" /></svg>
+                <p class="contact-numbers">
+                  Main line: 555-0142<br />
+                  Appointments: 555-0199<br />
+                  Emergency admitting: 555-0173
+                </p>
+              </li>
+            </ul>
+            <div class="emergency-callout">
+              <strong>Medical emergency?</strong> Call your local emergency number or go directly to the Emergency entrance on Meridian Parkway. Do not use the form on this page.
+            </div>
+          </div>
+
+          <div class="reveal panel-card" id="appointment">
+            <h3>Request an Appointment</h3>
+            <form id="appointment-form" novalidate>
+              <p class="form-note">Demonstration form. Nothing is sent or stored when you submit.</p>
+
+              <div class="field">
+                <label for="patient-name">Full name</label>
+                <input type="text" id="patient-name" name="patient-name" autocomplete="name" required />
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="department">Department</label>
+                  <select id="department" name="department" required>
+                    <option value="">Select a department</option>
+                    <option>Cardiology</option>
+                    <option>Maternity &amp; Newborn</option>
+                    <option>Pediatrics</option>
+                    <option>Oncology</option>
+                    <option>Orthopedics &amp; Sports Medicine</option>
+                    <option>Radiology &amp; Imaging</option>
+                    <option>General Checkup</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="preferred-date">Preferred date</label>
+                  <input type="date" id="preferred-date" name="preferred-date" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="contact-number">Contact number</label>
+                <input type="tel" id="contact-number" name="contact-number" autocomplete="tel" placeholder="555-0100" required />
+              </div>
+
+              <div class="field">
+                <label for="notes">Notes (optional)</label>
+                <textarea id="notes" name="notes" rows="3"></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Submit Request</button>
+
+              <div class="confirm-panel" id="confirm-panel" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-name brand-name-invert">City Hospital</span>
+          <p>Adversary City's public general hospital and Level II trauma center, serving the city since 1958.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="about/index.html">About City Hospital</a></li>
+            <li><a href="departments/index.html">Departments</a></li>
+            <li><a href="doctors/index.html">Doctors</a></li>
+            <li><a href="status/index.html">Hospital Status</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Patients</h3>
+          <ul>
+            <li><a href="visiting/index.html">Visiting &amp; Patient Info</a></li>
+            <li><a href="notices/index.html">Notices</a></li>
+            <li><a href="#appointment">Request Appointment</a></li>
+            <li><a href="#location">Directions &amp; Parking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>4400 Meridian Parkway</li>
+            <li>Adversary City, AC 00000</li>
+            <li>555-0142</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disclaimer">City Hospital and Adversary City are fictional. This site is part of the Adversary Wars simulated training scenario and is not affiliated with, and does not depict, any real hospital or organization.</p>
+        <p>&copy; <span id="year"></span> City Hospital, Adversary City (fictional).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

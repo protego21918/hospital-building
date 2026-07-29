@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+  Adversary Wars simulation project, set in the fictional city of Adversary City.
+  City Hospital is a fictional facility in the fictional city of Adversary City.
+  This site was built for a simulated training/CTF scenario and is not intended
+  to represent, impersonate, or harm any real hospital, organization, or place.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Status · City Hospital</title>
+  <meta name="description" content="City Hospital's current status by department, including emergency wait time, bed availability, and the blood bank." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="disclaimer" content="City Hospital and Adversary City are fictional, built for the Adversary Wars simulated training scenario. Not affiliated with, and does not depict, any real hospital or organization." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%231D6F72'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%23FBFAF7' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">
+        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#1d6f72" />
+          <path d="M20 11v18M11 20h18" stroke="#fbfaf7" stroke-width="4" stroke-linecap="round" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">City Hospital</span>
+          <span class="brand-sub">Adversary City · Est. 1958</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" id="nav-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../departments/index.html">Departments</a></li>
+          <li><a href="../doctors/index.html">Doctors</a></li>
+          <li><a href="../visiting/index.html">Visiting</a></li>
+          <li><a href="../notices/index.html">Notices</a></li>
+        </ul>
+        <a class="btn btn-primary" href="../index.html#appointment">Request Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <div class="wrap">
+        <a class="back-link" href="../index.html">&larr; Back to City Hospital</a>
+        <span class="eyebrow">Hospital Status</span>
+        <h1>City Hospital's current status, department by department.</h1>
+        <p class="lede">The figures below are illustrative, part of the Adversary Wars simulation, not a live feed. Call ahead for current wait times.</p>
+      </div>
+    </section>
+
+    <section class="status-board" aria-labelledby="status-heading">
+      <div class="wrap">
+        <div class="status-head">
+          <h2 id="status-heading">Overview</h2>
+          <span class="status-badge"><span class="status-dot" aria-hidden="true"></span>Demonstration data</span>
+        </div>
+      </div>
+      <div class="wrap wrap-flush">
+        <div class="status-grid">
+          <div class="status-cell">
+            <span class="status-label">ER Wait Time</span>
+            <span class="status-value">38 min</span>
+          </div>
+          <div class="status-cell">
+            <span class="status-label">Beds Available</span>
+            <span class="status-value">22 / 340</span>
+          </div>
+          <div class="status-cell">
+            <span class="status-label">Ambulance Bay</span>
+            <span class="status-value">Open</span>
+          </div>
+          <div class="status-cell">
+            <span class="status-label">Blood Bank</span>
+            <span class="status-value">O&minus; Low</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <p class="status-caption">Updated hourly during business hours. Figures are illustrative and shown for demonstration purposes only.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">By Department</span>
+          <h2>Current status across all eight departments.</h2>
+        </div>
+        <div class="two-col">
+          <div class="reveal">
+            <table class="status-table">
+              <thead>
+                <tr>
+                  <th>Department</th>
+                  <th>Status</th>
+                  <th>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Emergency &amp; Trauma</td>
+                  <td><span class="status-pill is-busy">Busy</span></td>
+                  <td>38 min average wait</td>
+                </tr>
+                <tr>
+                  <td>Cardiology</td>
+                  <td><span class="status-pill is-normal">Normal</span></td>
+                  <td>Same-day consults available</td>
+                </tr>
+                <tr>
+                  <td>Maternity &amp; Newborn</td>
+                  <td><span class="status-pill is-normal">Normal</span></td>
+                  <td>Tours available Mon&ndash;Sat</td>
+                </tr>
+                <tr>
+                  <td>Pediatrics</td>
+                  <td><span class="status-pill is-normal">Normal</span></td>
+                  <td>Walk-in vaccination clinic open</td>
+                </tr>
+                <tr>
+                  <td>Oncology</td>
+                  <td><span class="status-pill is-normal">Normal</span></td>
+                  <td>Infusion chairs available</td>
+                </tr>
+                <tr>
+                  <td>Orthopedics &amp; Sports Medicine</td>
+                  <td><span class="status-pill is-busy">Busy</span></td>
+                  <td>2-week wait for non-urgent consults</td>
+                </tr>
+                <tr>
+                  <td>Radiology &amp; Imaging</td>
+                  <td><span class="status-pill is-full">At Capacity</span></td>
+                  <td>MRI backlog. CT and X-ray unaffected.</td>
+                </tr>
+                <tr>
+                  <td>Laboratory &amp; Pathology</td>
+                  <td><span class="status-pill is-normal">Normal</span></td>
+                  <td>Standard turnaround</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="reveal">
+            <img class="status-photo" src="../assets/images/emergency-room-hospital-ambulance-rescue.jpg" width="910" height="607" loading="lazy" alt="Ambulances parked under the covered bay outside City Hospital's Emergency entrance." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">What the Statuses Mean</span>
+          <h2>Reading the status table.</h2>
+        </div>
+        <ul class="info-list">
+          <li>
+            <h3><span class="status-pill is-normal">Normal</span></h3>
+            <p>Typical wait times and availability for that department.</p>
+          </li>
+          <li>
+            <h3><span class="status-pill is-busy">Busy</span></h3>
+            <p>Longer than usual waits or a multi-week backlog for non-urgent care. Same-day and emergency care are still available.</p>
+          </li>
+          <li>
+            <h3><span class="status-pill is-full">At Capacity</span></h3>
+            <p>Non-urgent requests may be delayed further. Emergency care is not affected.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-name brand-name-invert">City Hospital</span>
+          <p>Adversary City's public general hospital and Level II trauma center, serving the city since 1958.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="../about/index.html">About City Hospital</a></li>
+            <li><a href="../departments/index.html">Departments</a></li>
+            <li><a href="../doctors/index.html">Doctors</a></li>
+            <li><a href="../status/index.html">Hospital Status</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Patients</h3>
+          <ul>
+            <li><a href="../visiting/index.html">Visiting &amp; Patient Info</a></li>
+            <li><a href="../notices/index.html">Notices</a></li>
+            <li><a href="../index.html#appointment">Request Appointment</a></li>
+            <li><a href="../index.html#location">Directions &amp; Parking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>4400 Meridian Parkway</li>
+            <li>Adversary City, AC 00000</li>
+            <li>555-0142</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disclaimer">City Hospital and Adversary City are fictional. This site is part of the Adversary Wars simulated training scenario and is not affiliated with, and does not depict, any real hospital or organization.</p>
+        <p>&copy; <span id="year"></span> City Hospital, Adversary City (fictional).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
